@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/syncedText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="22dp"
+            android:hint="Sync read text"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/asyncText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/syncedText"
+            android:layout_marginTop="22dp"
+            android:hint="Async read text"
+            android:singleLine="true" />
+
+        <ToggleButton
+            android:id="@+id/toggleStartStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/asyncText"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="24dp"
+            android:onClick="onToggleClicked"
+            android:text="ToggleButton"
+            android:textOff="Start"
+            android:textOn="Stop" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/asyncText"
+            android:layout_marginRight="18dp"
+            android:text="@string/charsreadText"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/charsreadText"
+            android:hint="0"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignTop="@+id/toggleStartStop"
+            android:inputType="number" />
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/toggleStartStop"
+            android:layout_marginTop="5dp"
+            android:text="@string/hostlabel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/hostText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:hint="@string/hostHint"
+            android:inputType="textNoSuggestions" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/hostText"
+            android:layout_marginTop="5dp"
+            android:text="@string/portlabel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/portText"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:hint="@string/portHint"
+            android:inputType="number|textNoSuggestions" />
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

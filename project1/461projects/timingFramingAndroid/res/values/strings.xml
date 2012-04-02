@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, TimingFramingAndroidActivity!</string>
+    <string name="app_name">TimingFramingAndroid</string>
+    <string name="buttonStartText">Start</string>
+    <string name="hostlabel">Host</string>
+    <string name="hostHint">Enter host name or IP</string>
+    <string name="charsreadText">Characters Read Correctly</string>
+    <string name="portlabel">Port</string>
+    <string name="portHint">Enter port number</string>
+
+</resources>
